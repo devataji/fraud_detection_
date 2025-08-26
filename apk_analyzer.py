@@ -5,6 +5,7 @@ APK Analyzer
 Extracts manifest metadata (permissions, activities, receivers, services) and
 estimates Binder usage from DEX bytecode. Optionally parses syscall and binder
 trace logs (from dynamic runs like strace/bindertrace) to compute frequencies.
+  
 
 USAGE
 -----
@@ -262,4 +263,5 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         print(f"[!] Error: {e}", file=sys.stderr)
+
         sys.exit(1)
